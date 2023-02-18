@@ -20,14 +20,7 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.springframework.mock.env.MockEnvironment;
 
-import static com.alibaba.nacos.api.annotation.NacosProperties.ACCESS_KEY_PLACEHOLDER;
-import static com.alibaba.nacos.api.annotation.NacosProperties.CLUSTER_NAME_PLACEHOLDER;
-import static com.alibaba.nacos.api.annotation.NacosProperties.CONTEXT_PATH_PLACEHOLDER;
-import static com.alibaba.nacos.api.annotation.NacosProperties.ENCODE_PLACEHOLDER;
-import static com.alibaba.nacos.api.annotation.NacosProperties.ENDPOINT_PLACEHOLDER;
-import static com.alibaba.nacos.api.annotation.NacosProperties.NAMESPACE_PLACEHOLDER;
-import static com.alibaba.nacos.api.annotation.NacosProperties.SECRET_KEY_PLACEHOLDER;
-import static com.alibaba.nacos.api.annotation.NacosProperties.SERVER_ADDR_PLACEHOLDER;
+import static com.alibaba.nacos.api.annotation.NacosProperties.*;
 
 public class NacosPropertiesTest {
     

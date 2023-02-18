@@ -390,7 +390,8 @@ public class DistributedDatabaseOperateImpl extends RequestProcessor4CP implemen
                     if (submit) {
                         List<ModifyRequest> requests = batchUpdate.stream().map(ModifyRequest::new)
                                 .collect(Collectors.toList());
-                        CompletableFuture<Response> future = protocol.writeAsync(WriteRequest.newBuilder().setGroup(group())
+                        CompletableFuture<Response> future = protocol.writeAsync(
+                                WriteRequest.newBuilder().setGroup(group())
                                 .setData(ByteString.copyFrom(serializer.serialize(requests)))
                                 .putExtendInfo(DATA_IMPORT_KEY, Boolean.TRUE.toString()).build());
                         futures.add(future);

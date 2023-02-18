@@ -18,11 +18,7 @@ package com.alibaba.nacos.api.annotation;
 
 import com.alibaba.nacos.api.PropertyKeyConst;
 
-import java.lang.annotation.Documented;
-import java.lang.annotation.ElementType;
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
-import java.lang.annotation.Target;
+import java.lang.annotation.*;
 
 /**
  * An annotation for Nacos Properties.
